@@ -190,7 +190,7 @@ export function Hero() {
             </Container>
 
             <CalendlyModal isOpen={isCalendlyModalOpen} onClose={handleCloseCalendlyModal} />
-            <StripePricingModal isOpen={isStripeModalOpen} onClose={handleCloseStripeModal} />
+            {/*<StripePricingModal isOpen={isStripeModalOpen} onClose={handleCloseStripeModal} />*/}
         </>
     );
 }
