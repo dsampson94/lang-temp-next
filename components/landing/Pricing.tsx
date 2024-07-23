@@ -164,7 +164,7 @@ export function Pricing() {
                         ] }
                     />
                     <Plan
-                        name="6 Lessons Per Month"
+                        name="8 Lessons Per Month"
                         price="zł370.00 PLN"
                         description="For even the biggest enterprise companies."
                         href="https://buy.stripe.com/dR6aFpfAn5GwchOeUW"
