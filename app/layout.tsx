@@ -4,8 +4,8 @@ import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
 
 export const metadata = {
-  title: 'ApplicaAi',
-  description: 'ApplicaAi - Home',
+  title: 'Convo Freaks',
+  description: 'Convo Freaks - Home',
 };
 
 // export const metadata: Metadata = {

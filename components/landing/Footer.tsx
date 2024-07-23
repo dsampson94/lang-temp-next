@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import {Container} from './Container';
 import Image from 'next/image';
-import aplicaLogo from '../../public/Applica_white.png';
+import aplicaLogo from '../../public/convofreaks.jpg';
 
 export function Footer() {
     return (
@@ -10,7 +10,7 @@ export function Footer() {
             <Container>
                 <div className="py-16">
                     <div className="flex items-center justify-center">
-                        <Image src={aplicaLogo} alt="Applica Logo" width={120} height={120}/>
+                        <Image src={aplicaLogo} alt="Logo" width={120} height={120}/>
                     </div>
                     <nav className="mt-10 text-sm" aria-label="quick links">
                         <div className="-my-1 flex justify-center gap-x-6">
@@ -45,7 +45,7 @@ export function Footer() {
                         </Link>
                     </div>
                     <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-                        Copyright &copy; {new Date().getFullYear()} ApplicaAi. All rights
+                        Copyright &copy; {new Date().getFullYear()} Convo Freaks. All rights
                         reserved.
                     </p>
                 </div>

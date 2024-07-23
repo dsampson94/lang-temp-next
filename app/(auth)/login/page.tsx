@@ -8,7 +8,7 @@ import {FormEvent, useState} from 'react';
 import axios from 'axios';
 import {useRouter} from 'next/navigation';
 import Image from 'next/image';
-import aplicaLogo from '../../../public/Applica_white.png';
+import logo from '../../../public/convofreaks.jpg';
 
 export default function Login() {
     const [isLogin, setIsLogin] = useState(true);
@@ -25,7 +25,7 @@ export default function Login() {
             const response = await axios.post('/api/auth/login', {username, password});
             if (isLogin) {
                 localStorage.setItem('token', response.data.token);
-                router.push('/applications');
+                router.push('/dashboard');
             } else {
                 setMessage(response.data.message);
             }
@@ -37,7 +37,7 @@ export default function Login() {
     return (
         <div>
             <div className="flex justify-center mb-6">
-                <Image src={aplicaLogo} alt="Applica Logo" width={150} height={200} />
+                <Image src={logo} alt="Logo" width={150} height={200} />
             </div>
             <h2 className="text-lg font-semibold text-gray-900 text-center">
                 {isLogin ? 'Sign in to your account' : 'Register for an account'}
