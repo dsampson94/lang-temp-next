@@ -149,6 +149,19 @@ export function Pricing() {
                     />
                     <Plan
                         featured
+                        name="8 Lessons Per Month"
+                        price="zł370.00 PLN"
+                        description="For even the biggest enterprise companies."
+                        href="https://buy.stripe.com/dR6aFpfAn5GwchOeUW"
+                        features={ [
+                            'Send unlimited quotes and invoices',
+                            'Connect up to 15 bank accounts',
+                            'Track up to 200 expenses per month',
+                            'Automated payroll support',
+                            'Export up to 25 reports, including TPS',
+                        ] }
+                    />
+                    <Plan
                         name="6 Lessons Per Month"
                         price="zł280.00 PLN"
                         description="Perfect for small / medium sized businesses."
@@ -161,19 +174,6 @@ export function Pricing() {
                             'Export up to 12 reports',
                             'Bulk reconcile transactions',
                             'Track in multiple currencies',
-                        ] }
-                    />
-                    <Plan
-                        name="8 Lessons Per Month"
-                        price="zł370.00 PLN"
-                        description="For even the biggest enterprise companies."
-                        href="https://buy.stripe.com/dR6aFpfAn5GwchOeUW"
-                        features={ [
-                            'Send unlimited quotes and invoices',
-                            'Connect up to 15 bank accounts',
-                            'Track up to 200 expenses per month',
-                            'Automated payroll support',
-                            'Export up to 25 reports, including TPS',
                         ] }
                     />
                 </div>
