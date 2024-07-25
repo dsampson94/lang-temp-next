@@ -14,9 +14,9 @@ const feature = {
 export function PrimaryFeatures() {
     return (
         <section id="features" aria-label="Features for running your books"
-                 className="relative overflow-hidden pb-28 pt-20 sm:py-24">
+                 className="relative overflow-hidden pb-28 pt-20 shadow-2xl sm:py-24">
             <Image
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 shadow-2xl w-full h-full object-cover rounded-[12px]"
                 src={backgroundImage}
                 alt=""
                 layout="fill"
@@ -36,7 +36,7 @@ export function PrimaryFeatures() {
                         <Tab.Panels className="">
                             <Tab.Panel unmount={false}>
                                 <div
-                                    className="mt-10 w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20">
+                                    className="mt-10 w-full overflow-hidden rounded-xl bg-slate-50 shadow-2xl shadow-blue-900/20">
                                     <iframe
                                         className="w-full h-64 sm:h-96"
                                         src={feature.videoUrl}

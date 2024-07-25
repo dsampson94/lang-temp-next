@@ -44,10 +44,10 @@ export function TeachersProfiles() {
                         Our experienced and dedicated teachers are here to help you achieve your English learning goals.
                     </p>
                 </div>
-                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6  pb-2">
+                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6 pb-2">
                     { teachers.map((teacher) => (
                         <div key={ teacher.name }
-                             className="bg-white mx-4 sm:mx-auto rounded-lg shadow-xl p-6 flex flex-col items-center">
+                             className="bg-white mx-4 sm:mx-auto rounded-xl shadow-xl p-6 flex flex-col items-center">
                             <Image
                                 className="w-40 h-54 rounded-lg shadow-lg"
                                 src={ teacher.image }
