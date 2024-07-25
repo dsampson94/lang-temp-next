@@ -7,9 +7,9 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 export function Footer() {
     return (
-        <footer id="contact" className="bg-slate-50 relative z-1">
+        <footer id="contact" className="bg-slate-50 relative px-2 z-1 min-w-full sm:mx-auto">
             <Container>
-                <div className="py-8">
+                <div className="pt-8">
                     <div className="flex items-center justify-center">
                         <Image src={ aplicaLogo } alt="Logo" width={ 160 } height={ 160 } className="rounded-lg"/>
                     </div>
@@ -25,19 +25,19 @@ export function Footer() {
                     <div className="text-center lg:text-left">
                         <h3 className="font-semibold text-gray-900">Contact Us</h3>
                         <p className="mt-2 text-sm text-gray-700">
-                            +48 501 345 039
+                            <a href="tel:+48501345039" className="hover:underline">+48 501 345 039</a>
                             <br/>
-                            info@convofreaks.com
+                            <a href="mailto:info@convofreaks.com" className="hover:underline">info@convofreaks.com</a>
                         </p>
                     </div>
                     <div className="text-center lg:text-left">
                         <h3 className="font-semibold text-gray-900">Information</h3>
                         <p className="mt-2 text-sm text-gray-700">
-                            <Link href="/terms" className="text-gray-700 hover:text-gray-900 transition">
+                            <Link href="/terms" className="hover:underline text-gray-700 hover:text-gray-900 transition">
                                 Terms and Conditions
                             </Link>
                             <br/>
-                            <Link href="/privacy" className="text-gray-700 hover:text-gray-900 transition">
+                            <Link href="/privacy" className="hover:underline text-gray-700 hover:text-gray-900 transition">
                                 Privacy Policy
                             </Link>
                         </p>
@@ -74,7 +74,7 @@ export function Footer() {
                 </div>
                 <div
                     className="border-t border-slate-400/10 py-10 flex flex-col items-center sm:flex-row-reverse sm:justify-between">
-                    <p className="mt-6 text-sm text-slate-500 sm:mt-0">
+                    <p className="text-sm text-slate-500 sm:mt-0">
                         Copyright &copy; { new Date().getFullYear() } Convo Freaks. All rights reserved.
                     </p>
                 </div>

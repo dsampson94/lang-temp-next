@@ -13,13 +13,13 @@ declare global {
 
 const HeroTitle: React.FC = () => (
     <>
-        <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+        <h1 className="mx-2 sm:mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
             Talk like a{ ' ' }
             <span className="relative whitespace-nowrap text-blue-500">
                 <span className="relative">pro</span>
             </span>{ ' ' }
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+        <p className="mx-4 sm:mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
             We are an online language school offering conversational and business English classes for A2 - C2 adults
             and teenagers with qualified native teachers from South Africa.
         </p>
@@ -139,7 +139,7 @@ export function Hero() {
                 <h2 className="font-display text-3xl tracking-tight text-center text-slate-900 sm:text-4xl">
                     Benefits of our lessons
                 </h2>
-                <ul className="mt-8 grid grid-cols-3 gap-y-8 gap-x-6 mx-2">
+                <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-6 mx-2">
                     { benefits.map((benefit) => (
                         <li key={ benefit.title }
                             className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md">

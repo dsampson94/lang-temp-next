@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export function ContactSupportButton() {
     return (
-        <div className="fixed bottom-4 right-4 flex flex-col items-center gap-2 z-11">
+        <div className="fixed bottom-4 right-4 flex flex-col items-center gap-2 z-[9999]">
             <a
                 href="https://wa.me/48503531792"
                 target="_blank"

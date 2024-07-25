@@ -76,7 +76,7 @@ const Header = () => {
     return (
         <header>
             <nav className="relative z-50 flex justify-between shadow-lg px-6 py-2">
-                <div className="flex items-center md:gap-x-12">
+                <div className="flex items-center -ml-8 sm:ml-0 md:gap-x-12">
                     <Link href="/" aria-label="Home">
                         <Image src={ logo } alt="Logo" width={ 180 } height={ 200 }/>
                     </Link>
@@ -89,7 +89,7 @@ const Header = () => {
                             <NavLink href="#contact">Contact</NavLink>
                         </div>
                         <Button href="#teachers" color="blue">
-                                    <div>
+                                    <div className="text-xs whitespace-nowrap">
                                         Get started <span className="hidden lg:inline">today</span>
                                     </div>
                         </Button>

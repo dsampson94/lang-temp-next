@@ -32,9 +32,17 @@ export function Faqs() {
       <section
           id="faq"
           aria-labelledby="faq-title"
-          className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+          className="relative z-1 mx-4 sm:mx-auto overflow-hidden bg-slate-50 pb-20 sm:py-32"
       >
-        <Container className="relative">
+        <Image
+            className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-1%]"
+            src={backgroundImage}
+            alt=""
+            width={1558}
+            height={946}
+            unoptimized
+        />
+        <Container className="relative mt-12">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2
                 id="faq-title"

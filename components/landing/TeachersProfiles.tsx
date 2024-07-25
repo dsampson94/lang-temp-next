@@ -23,8 +23,19 @@ const teachers = [
 
 export function TeachersProfiles() {
     return (
-        <section id="teachers" aria-label="English Teachers" className="py-20 bg-slate-50">
-            <Container>
+        <section id="teachers"
+                 aria-label="English Teachers"
+                 className="relative z-1 mx-4 sm:mx-auto overflow-hidden bg-slate-50 pt-32"
+        >
+            <Image
+                className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-99%]"
+                src={ backgroundImage }
+                alt=""
+                width={ 1558 }
+                height={ 946 }
+                unoptimized
+            />
+            <Container className="relative">
                 <div className="max-w-2xl mx-auto text-center">
                     <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
                         Meet Our English Teachers
@@ -33,8 +44,8 @@ export function TeachersProfiles() {
                         Our experienced and dedicated teachers are here to help you achieve your English learning goals.
                     </p>
                 </div>
-                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6">
-                    {teachers.map((teacher) => (
+                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6 shadow-xl pb-2">
+                    { teachers.map((teacher) => (
                         <div key={ teacher.name }
                              className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                             <Image
