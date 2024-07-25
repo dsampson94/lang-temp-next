@@ -28,7 +28,7 @@ export function TeachersProfiles() {
                  className="relative z-1 overflow-hidden bg-slate-50 pt-32"
         >
             <Image
-                className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-99%]"
+                className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-90%]"
                 src={ backgroundImage }
                 alt=""
                 width={ 1558 }
@@ -47,7 +47,7 @@ export function TeachersProfiles() {
                 <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6  pb-2">
                     { teachers.map((teacher) => (
                         <div key={ teacher.name }
-                             className="bg-white mx-4 sm:mx-auto rounded-lg shadow-lg shadow-xl p-6 flex flex-col items-center">
+                             className="bg-white mx-4 sm:mx-auto rounded-lg shadow-xl p-6 flex flex-col items-center">
                             <Image
                                 className="w-40 h-54 rounded-lg shadow-lg"
                                 src={ teacher.image }

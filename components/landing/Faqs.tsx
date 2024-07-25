@@ -35,7 +35,7 @@ export function Faqs() {
           className="relative z-1 overflow-hidden bg-slate-50 pb-20 sm:py-32"
       >
         <Image
-            className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-1%]"
+            className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-10%]"
             src={backgroundImage}
             alt=""
             width={1558}
