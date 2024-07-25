@@ -27,7 +27,7 @@ export function PrimaryFeatures() {
                     <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
                         Experts in grammatical correction
                     </h2>
-                    <p className="mt-6 text-lg tracking-tight text-blue-100">
+                    <p className="mt-6 mx-4 text-lg tracking-tight text-blue-100">
                         We correct common grammatical errors in class
                     </p>
                 </div>

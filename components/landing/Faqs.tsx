@@ -43,10 +43,10 @@ export function Faqs() {
             unoptimized
         />
         <Container className="relative">
-          <div className="max-w-2xl mt-12 lg:mx-0 mx-4 sm:mx-auto">
+          <div className="max-w-2xl mt-12 md:mt-2 lg:mx-0 mx-4 sm:mx-auto">
             <h2
                 id="faq-title"
-                className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+                className="font-display text-2xl tracking-tight text-slate-900 sm:text-4xl"
             >
               Frequently asked questions
             </h2>
@@ -56,17 +56,17 @@ export function Faqs() {
           </div>
           <ul
               role="list"
-              className="mx-4 sm:mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-1"
+              className="mx-4 sm:mx-auto mt-6 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-1"
           >
             {faqs.map((column, columnIndex) => (
                 <li key={columnIndex}>
-                  <ul role="list" className="flex flex-col gap-y-8">
+                  <ul role="list" className="flex flex-col gap-y-4">
                     {column.map((faq, faqIndex) => (
                         <li key={faqIndex}>
-                          <h3 className="font-display text-lg leading-7 text-slate-900">
+                          <h3 className="font-display text-md leading-7 font-semibold text-slate-900">
                             {faq.question}
                           </h3>
-                          <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
+                          <p className="mt-2 text-sm text-slate-700">{faq.answer}</p>
                         </li>
                     ))}
                   </ul>
