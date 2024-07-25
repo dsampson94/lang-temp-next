@@ -16,7 +16,7 @@ const teachers = [
         name: 'Callin Ontong',
         title: 'EFL Teacher',
         bio: 'Callin is a dedicated EFL teacher with years of experience in teaching English to students of various levels. His engaging teaching style makes learning fun and effective.',
-        image: '/images/teacher2.jpg',
+        image: '/callin.jpg',
         video: 'https://www.youtube.com/embed/your-video-id',
     },
 ];
