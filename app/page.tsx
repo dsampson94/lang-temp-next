@@ -6,25 +6,22 @@ import { TeachersProfiles } from '../components/landing/TeachersProfiles';
 import { Faqs } from '../components/landing/Faqs';
 import { Testimonials } from '../components/landing/Testimonials';
 import { ContactSupportButton } from '../components/landing/ContactSupportButton';
-import Image from 'next/image';
-import backgroundImage from '../components/landing/images/background-faqs.jpg';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
     return (
         <>
-            <Header />
+            <Header/>
             <main>
-                <Hero />
-                <PrimaryFeatures />
-                <TeachersProfiles />
-                {/*<SecondaryFeatures />*/}
-                {/*<CallToAction />*/}
-                {/*<Pricing />*/}
-                {/*<Testimonials />*/}
-                <Faqs />
+                <Hero/>
+                <PrimaryFeatures/>
+                <TeachersProfiles/>
+                <Testimonials/>
+                <Faqs/>
             </main>
-            <ContactSupportButton />
-            <Footer />
+            <ContactSupportButton/>
+            <Footer/>
+            <Analytics/>
         </>
     );
 }
