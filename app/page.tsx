@@ -16,7 +16,6 @@ export default function Home() {
                 <Hero/>
                 <PrimaryFeatures/>
                 <TeachersProfiles/>
-                <Testimonials/>
                 <Faqs/>
             </main>
             <ContactSupportButton/>
