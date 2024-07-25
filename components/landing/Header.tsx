@@ -1,19 +1,13 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { Popover, PopoverBackdrop, PopoverButton, PopoverPanel } from '@headlessui/react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import logo from '../../public/convofreaks.jpg';
 import { Button } from './Button';
 import { NavLink } from './NavLink';
-import { getUserFromToken } from '../../lib/auth';
-
-interface HeaderProps {
-    isLoggedIn: boolean;
-}
 
 const MobileNavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
     return (
@@ -50,7 +44,7 @@ const MobileNavIcon = ({ open }: { open: boolean }) => {
     );
 };
 
-const MobileNavigation = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
+const MobileNavigation = () => {
     return (
         <Popover>
             <PopoverButton
@@ -67,39 +61,17 @@ const MobileNavigation = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
                 transition
                 className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
             >
-                { isLoggedIn ? (
-                    <>
-                        <MobileNavLink href="/profile">Profile</MobileNavLink>
-                        <MobileNavLink href="/account">My account</MobileNavLink>
-                        <MobileNavLink href="/logout">Logout</MobileNavLink>
-                    </>
-                ) : (
-                    <MobileNavLink href="/login">Sign in</MobileNavLink>
-                ) }
+                <>
+                    <MobileNavLink href="/profile">About Us</MobileNavLink>
+                    <MobileNavLink href="/account">My account</MobileNavLink>
+                    <MobileNavLink href="/logout">Logout</MobileNavLink>
+                </>
             </PopoverPanel>
         </Popover>
     );
 };
 
-const Header = ({ isLoggedIn }: HeaderProps) => {
-    const [user, setUser] = useState<null | { id: string; email: string; username: string }>(null);
-    const router = useRouter();
-
-    useEffect(() => {
-        if (isLoggedIn) {
-            const user = getUserFromToken();
-            setUser(user);
-        }
-    }, [isLoggedIn]);
-
-    const handleSignOut = () => {
-        localStorage.removeItem('token');
-        router.push('/');
-    };
-
-    const getInitial = (email: string) => {
-        return email?.charAt(0)?.toUpperCase();
-    };
+const Header = () => {
 
     return (
         <header>
@@ -108,38 +80,22 @@ const Header = ({ isLoggedIn }: HeaderProps) => {
                     <Link href="/" aria-label="Home">
                         <Image src={ logo } alt="Logo" width={ 180 } height={ 200 }/>
                     </Link>
-                    <div className="hidden md:flex md:gap-x-6">
-                        {/* Add NavLinks here if needed */ }
-                    </div>
                 </div>
                 <div className="flex items-center gap-x-5 md:gap-x-8">
-                    { isLoggedIn ? (
-                        <>
-                            { user && (
-                                <div className="relative">
-                                    <button onClick={ handleSignOut } className="focus:outline-none">
-                                        <div
-                                            className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-blue-500 text-white text-lg font-semibold">
-                                            { getInitial(user.email) }
-                                        </div>
-                                    </button>
-                                </div>
-                            ) }
-                        </>
-                    ) : (
-                        <>
-                            <div className="hidden md:block">
-                                <NavLink href="/login">Sign in</NavLink>
-                            </div>
-                            <Button href="/register" color="blue">
-                                    <span>
+                    <>
+                        <div className="hidden md:flex md:gap-x-6">
+                            <NavLink href="#features">About Us</NavLink>
+                            <NavLink href="#teachers">Teachers</NavLink>
+                            <NavLink href="#contact">Contact</NavLink>
+                        </div>
+                        <Button href="#teachers" color="blue">
+                                    <div>
                                         Get started <span className="hidden lg:inline">today</span>
-                                    </span>
-                            </Button>
-                        </>
-                    ) }
+                                    </div>
+                        </Button>
+                    </>
                     <div className="-mr-1 md:hidden">
-                        <MobileNavigation isLoggedIn={ isLoggedIn }/>
+                        <MobileNavigation/>
                     </div>
                 </div>
             </nav>
