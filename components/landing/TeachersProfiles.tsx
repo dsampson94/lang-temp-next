@@ -25,7 +25,7 @@ export function TeachersProfiles() {
     return (
         <section id="teachers"
                  aria-label="English Teachers"
-                 className="relative z-1 mx-4 sm:mx-auto overflow-hidden bg-slate-50 pt-32"
+                 className="relative z-1 overflow-hidden bg-slate-50 pt-32"
         >
             <Image
                 className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-99%]"
@@ -36,7 +36,7 @@ export function TeachersProfiles() {
                 unoptimized
             />
             <Container className="relative">
-                <div className="max-w-2xl mx-auto text-center">
+                <div className="max-w-2xl text-center mx-4 sm:mx-auto">
                     <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
                         Meet Our English Teachers
                     </h2>
@@ -44,10 +44,10 @@ export function TeachersProfiles() {
                         Our experienced and dedicated teachers are here to help you achieve your English learning goals.
                     </p>
                 </div>
-                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6 shadow-xl pb-2">
+                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6  pb-2">
                     { teachers.map((teacher) => (
                         <div key={ teacher.name }
-                             className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                             className="bg-white mx-4 sm:mx-auto rounded-lg shadow-lg shadow-xl p-6 flex flex-col items-center">
                             <Image
                                 className="w-40 h-54 rounded-lg shadow-lg"
                                 src={ teacher.image }
