@@ -31,7 +31,7 @@ export function PrimaryFeatures() {
                         We correct common grammatical errors in class
                     </p>
                 </div>
-                <Tab.Group as="div" className="grid grid-cols-1 items-center gap-y-2 sm:gap-y-6">
+                <Tab.Group as="div" className="grid grid-cols-1 items-center gap-y-2 sm:gap-y-6 mx-4">
                     <>
                         <Tab.Panels className="">
                             <Tab.Panel unmount={false}>

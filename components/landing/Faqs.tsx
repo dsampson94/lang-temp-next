@@ -32,7 +32,7 @@ export function Faqs() {
       <section
           id="faq"
           aria-labelledby="faq-title"
-          className="relative z-1 mx-4 sm:mx-auto overflow-hidden bg-slate-50 pb-20 sm:py-32"
+          className="relative z-1 overflow-hidden bg-slate-50 pb-20 sm:py-32"
       >
         <Image
             className="absolute left-1/2 top-0 max-w-none -translate-y-4/4 translate-x-[-1%]"
@@ -42,8 +42,8 @@ export function Faqs() {
             height={946}
             unoptimized
         />
-        <Container className="relative mt-12">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+        <Container className="relative">
+          <div className="max-w-2xl mt-12 lg:mx-0 mx-4 sm:mx-auto">
             <h2
                 id="faq-title"
                 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
@@ -56,7 +56,7 @@ export function Faqs() {
           </div>
           <ul
               role="list"
-              className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-1"
+              className="mx-4 sm:mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-1"
           >
             {faqs.map((column, columnIndex) => (
                 <li key={columnIndex}>
