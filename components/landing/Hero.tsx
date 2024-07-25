@@ -15,7 +15,7 @@ const HeroTitle: React.FC = () => (
     <>
         <h1 className="mx-2 sm:mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
             Talk like a{ ' ' }
-            <span className="relative whitespace-nowrap text-blue-500">
+            <span className="relative whitespace-nowrap text-[#0098cd]">
                 <span className="relative">pro</span>
             </span>{ ' ' }
         </h1>
@@ -120,7 +120,7 @@ export function Hero() {
                 <div className="mt-10 flex justify-center gap-x-6">
                     <Button href="#teachers"
                             variant="outline"
-                            className="border-2 border-blue-500"
+                            className="border-2 border-[#0098cd]"
                     >
                         <svg
                             aria-hidden="true"

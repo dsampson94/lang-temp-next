@@ -8,15 +8,6 @@ export const metadata = {
   description: 'Convo Freaks - Home',
 };
 
-// export const metadata: Metadata = {
-//     title: {
-//         template: '%s - TaxPal',
-//         default: 'TaxPal - Accounting made simple for small businesses',
-//     },
-//     description:
-//         'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
-// }
-
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',

@@ -88,7 +88,7 @@ const Header = () => {
                             <NavLink href="#teachers">Teachers</NavLink>
                             <NavLink href="#contact">Contact</NavLink>
                         </div>
-                        <Button href="#teachers" color="blue">
+                        <Button href="#teachers" className='bg-[#0098cd] hover:bg-teal-600'>
                                     <div className="text-xs whitespace-nowrap">
                                         Get started <span className="hidden lg:inline">today</span>
                                     </div>
