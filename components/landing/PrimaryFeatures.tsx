@@ -25,11 +25,11 @@ export function PrimaryFeatures() {
             <Container className="relative mx-4 sm:mx-auto">
                 <div className="max-w-2xl mx-auto text-center xl:max-w-none">
                     <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-                        Experts in grammatical correction
+                        How we correct grammatical errors in class
                     </h2>
-                    <p className="mt-6 mx-4 text-lg tracking-tight text-blue-100">
-                        We correct common grammatical errors in class
-                    </p>
+                    {/*<p className="mt-6 mx-4 text-lg tracking-tight text-blue-100">*/}
+                    {/*    We correct common grammatical errors in class*/}
+                    {/*</p>*/}
                 </div>
                 <Tab.Group as="div" className="grid grid-cols-1 items-center gap-y-2 sm:gap-y-6 mx-4">
                     <>

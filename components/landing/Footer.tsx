@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Container } from './Container';
 import Image from 'next/image';
-import aplicaLogo from '../../public/convofreaks.jpg';
+import aplicaLogo from '../../public/convofreaks.png';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
@@ -17,7 +17,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-4 lg:gap-x-12 py-8">
                     <div className="text-center lg:text-left">
                         <h3 className="font-semibold text-gray-900">About Us</h3>
-                        <p className="mt-2 mx-4 text-sm text-gray-700">
+                        <p className="mt-2 mx-4 sm:mx-0 text-sm text-gray-700">
                             We are an online English school that helps individuals improve conversational and business
                             English for everyday scenarios.
                         </p>

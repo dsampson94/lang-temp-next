@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Popover, PopoverBackdrop, PopoverButton, PopoverPanel } from '@headlessui/react';
 import clsx from 'clsx';
 import Image from 'next/image';
-import logo from '../../public/convofreaks.jpg';
+import logo from '../../public/convofreaks.png';
 import { Button } from './Button';
 import { NavLink } from './NavLink';
 
@@ -88,10 +88,10 @@ const Header = () => {
                             <NavLink href="#teachers">Teachers</NavLink>
                             <NavLink href="#contact">Contact</NavLink>
                         </div>
-                        <Button href="#teachers" className='bg-[#0098cd] hover:bg-teal-600'>
-                                    <div className="text-xs whitespace-nowrap">
-                                        Get started <span className="hidden lg:inline">today</span>
-                                    </div>
+                        <Button href="#teachers" className="bg-blue-400 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:ring-1 focus:ring-teal-600 focus:ring-offset-2">
+                            <div className="text-xs whitespace-nowrap">
+                                Get started <span className="hidden lg:inline">today</span>
+                            </div>
                         </Button>
                     </>
                     <div className="-mr-1 md:hidden">

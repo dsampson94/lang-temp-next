@@ -9,7 +9,7 @@ const teachers = [
         name: 'Joel Ntoto',
         title: 'Founder / EFL Teacher',
         bio: 'Joel is the founder of our school and an experienced EFL teacher. He has a passion for helping students achieve their English learning goals.',
-        image: '/joel.png',
+        image: '/joel.jpg',
         video: 'https://www.youtube.com/embed/your-video-id',
     },
     {
@@ -44,10 +44,10 @@ export function TeachersProfiles() {
                         Our experienced and dedicated teachers are here to help you achieve your English learning goals.
                     </p>
                 </div>
-                <div className="mt-16 grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-6 pb-2">
+                <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-6 pb-2">
                     { teachers.map((teacher) => (
                         <div key={ teacher.name }
-                             className="bg-white mx-4 sm:mx-auto rounded-xl shadow-xl p-6 flex flex-col items-center">
+                             className="bg-white mx-4 sm:mx-auto max-w-4xl rounded-xl shadow-xl p-6 flex flex-col items-center">
                             <Image
                                 className="w-40 h-54 rounded-lg shadow-lg"
                                 src={ teacher.image }
@@ -70,12 +70,14 @@ export function TeachersProfiles() {
                                 ></iframe>
                             </div>
                             <p className="mt-2 text-lg font-medium text-gray-900">85 PLN (45 minutes)</p>
-                            <button
-                                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                                onClick={ () => alert(`Booking session with ${ teacher.name }`) }
-                            >
-                                Book a Session
-                            </button>
+                            { !teacher.name.includes('Joel') &&
+                                <button
+                                    className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                    onClick={ () => alert(`Booking session with ${ teacher.name }`) }
+                                >
+                                    Book a Session
+                                </button>
+                            }
                         </div>
                     )) }
                 </div>
